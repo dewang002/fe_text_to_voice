@@ -10,7 +10,7 @@ export default function TextToSpeechLanding() {
     const handleSubmit = async () => {
         if (!text.trim()) return
                
-        await axios.post('http://localhost:3000/talk', {
+        await axios.post('https://be-text-to-voice.onrender.com/talk', {
             message: text
         })
 
